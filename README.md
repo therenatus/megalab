@@ -34,13 +34,13 @@ Current time is : 4 PM : 50 : 22
 
 Ожидаемый результат:
 
-`<ol id="todo-list">`
-	<li class="task">Buy lemonade</li>
-	<li class="task">Make toasts</li>
-	<li class="task">Repair car</li>
-	<li class="task">Play games</li>
-	<li class="task">Pet a cat</li>
-`</ol>`
+```<ol id="todo-list">```
+    `<li class="task">Buy lemonade</li>`
+	`<li class="task">Make toasts</li>`
+	`<li class="task">Repair car</li>`
+	`<li class="task">Play games</li>`
+	`<li class="task">Pet a cat</li>`
+```</ol>```
 
 ***
 6. Модернизируйте задачу №2, чтобы время обновлялось каждую секунду
