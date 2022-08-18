@@ -14,7 +14,9 @@ Current time is : 4 PM : 50 : 22
 3. Ваша задача состоит в том, чтобы создать функцию, которая может принимать любое неотрицательное целое число в качестве аргумента и возвращать его с цифрами в порядке убывания. По сути, переставьте цифры, чтобы получить максимально возможное число.
 
 *42145 -> 54421*
+
 *145263 -> 654321*
+
 *123456789 -> 987654321*
 ***
 
@@ -22,6 +24,7 @@ Current time is : 4 PM : 50 : 22
 
 
 *Hey fellow warriors -> Hey wollef sroirraw*
+
 *This is another test ->This is rehtona test*
 
 ***
@@ -32,11 +35,11 @@ Current time is : 4 PM : 50 : 22
 Ожидаемый результат:
 
 `<ol id="todo-list">`
-	`<li class="task">Buy lemonade</li>`
-	`<li class="task">Make toasts</li>`
-	`<li class="task">Repair car</li>`
-	`<li class="task">Play games</li>`
-	`<li class="task">Pet a cat</li>`
+	<li class="task">Buy lemonade</li>
+	<li class="task">Make toasts</li>
+	<li class="task">Repair car</li>
+	<li class="task">Play games</li>
+	<li class="task">Pet a cat</li>
 `</ol>`
 
 ***
