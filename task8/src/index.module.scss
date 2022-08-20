@@ -1,0 +1,31 @@
+.main {
+  width: 80%;
+  margin: auto;
+  margin-top: 10vh;
+  .number{
+    font-size: 56px;
+    font-weight: bold;
+    color: #1266F1;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .buttonGroup{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    justify-content:space-around;
+    button{
+      background: #1266F1;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background: #075eebda;
+      }
+    }
+  }
+}
