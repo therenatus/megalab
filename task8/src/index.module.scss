@@ -26,6 +26,10 @@
       &:hover {
         background: #075eebda;
       }
+      &:disabled {
+        background: gray;
+        cursor: no-drop;
+      }
     }
   }
 }
