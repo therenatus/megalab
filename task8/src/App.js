@@ -3,7 +3,7 @@ import styles from './index.module.scss';
 
 function App() {
 	const [number, setNumber] = useState(0);
-	const [disabled, setDisabled] = useState(false);
+	const [disabled, setDisabled] = useState(true);
 
 	useEffect(() => {
 		let autoDec = null
@@ -14,32 +14,29 @@ function App() {
 		autoDec = setInterval(()=>{
 			if(number && number< 1000){
 				setNumber(number-1)
+				setDisabled(true)
 			}
 		},1000)
 	  }
 	  return ()=> clearInterval(autoDec)
 	},  [number])
 
-	const changeNumber = (action) => {
-		switch(action) {
-			case 'increase':
-				setNumber(number+1)
-				break;
-			case 'decrease':
-				setNumber(number-1)
-				break;
-			case 'reset':
-				setNumber(0)
-				break;
-		}
+	const increase = () => {
+		setNumber(number+1)
+	}
+	const decrease = () => {
+		setNumber(number-1)
+	}
+	const reset = () => {
+		setNumber(0)
 	}
 	return (
 		<div className={styles.main}>
 			<div className={styles.number}>{number}</div>
 			<div className={styles.buttonGroup}>
-				<button disabled={disabled} onClick={() => changeNumber('increase')}>Increase</button>
-				<button disabled={disabled} onClick={() => changeNumber('decrease')}>Decrease</button>
-				<button disabled={disabled} onClick={() => changeNumber('reset')}>Reset</button>
+				<button disabled={disabled} onClick={() => increase()}>Increase</button>
+				<button disabled={disabled} onClick={() => decrease()}>Decrease</button>
+				<button onClick={() => reset()}>Reset</button>
 				<input type='number' value={number}
 					onChange={e=> {
 					setNumber(+e.target.value > 1000 ? number : e.target.value)
